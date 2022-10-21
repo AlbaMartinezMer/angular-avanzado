@@ -1,1 +1,30 @@
-<p>grafica1 works!</p>
+    <!-- Start Page Content - Cuadro en blanco -->
+<div class="row">
+    <div class="col-6">
+        <app-donut title="Ventas"
+                    [labels]="labels0"
+                    [data]="data0">
+        </app-donut>
+    </div>
+    <div class="col-6">
+        <app-donut title="Compras"
+                    [labels]="labels1"
+                    [data]="data1">
+        </app-donut>
+    </div>
+    <div class="col-6">
+        <app-donut title="Cambios"></app-donut>
+    </div>
+    <div class="col-6"> <!-- Aqui como no hemos puesto titulo cogera el by default=sin titulo -->
+        <app-donut></app-donut>
+    </div>  
+</div>
+    <!-- End Page Content -->
+
+
+
+
+
+
+
+

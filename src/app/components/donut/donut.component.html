@@ -1,0 +1,17 @@
+
+<!-- Este es el template - by default lo que saldra si no ponemos a mano otra cosa -->
+<div class="card">
+    <div class="card-body">
+
+        <!-- Sin titulo -->
+        <h3>{{ title }}</h3>
+
+        <div style="display: block">
+            <canvas baseChart
+            [data]="doughnutChartData"
+            [labels]="doughnutChartLabels"
+            type="doughnut">
+            </canvas>
+        </div>
+    </div>
+</div>

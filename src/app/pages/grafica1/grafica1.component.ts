@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-grafica1',
@@ -6,11 +8,23 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class Grafica1Component implements OnInit {
+export class Grafica1Component  {
 
-  constructor() { }
+  public labels0: string[] = [ 'Pepinos', 'Cebollas', 'Hortalizas' ];
+  public data0 = { //esto seria el MultiDataSet
+    labels: this.labels0,
+    datasets: [
+      { data: [ 50, 30, 20 ] }
+    ]
+  };
 
-  ngOnInit(): void {
-  }
+  public labels1: string[] = [ 'Patatas', 'Pan', 'Pizza' ];
+  public data1 = { //esto seria el MultiDataSet
+    labels: this.labels1,
+    datasets: [
+      { data: [ 45, 75, 10 ] }
+    ]
+  };
+
 
 }
